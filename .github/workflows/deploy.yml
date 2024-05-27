@@ -42,4 +42,4 @@ jobs:
         id: apply
         run: terraform apply PLAN
         working-directory: ./terraform
-      - name: Set output
+      # - name: Set output
