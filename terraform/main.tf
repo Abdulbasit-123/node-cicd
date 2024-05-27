@@ -13,8 +13,8 @@ terraform {
  provider "aws" {
   region = var.region
 }
-resource "aws_instance" "servernode" {
-  ami                    = "ami-052efd3df9dad4825"
+resource "aws_instance" "server" {
+  ami                    = "ami-0e001c9271cf7f3b9"
   instance_type          = "t2.micro"
   key_name               = aws_key_pair.deployer.key_name
   vpc_security_group_ids = [aws_security_group.maingroup.id]
@@ -82,6 +82,6 @@ resource "aws_key_pair" "deployer" {
 }
 
 output "instance_public_ip" {
-  value     = aws_instance.servernode.public_ip
+  value     = aws_instance.server.public_ip
   sensitive = true
 }
