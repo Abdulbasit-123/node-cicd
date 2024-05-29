@@ -1,5 +1,5 @@
 
-<h1>Building a CI/CD pipeline for our an application</h1>
+<h1>Building a CI/CD pipeline for an application</h1>
 
 <h2>Technologies Used</h1>
 <ul>
